@@ -1,7 +1,10 @@
+import withLayoutMain from "@/libs/components/layout/LayoutHome";
 import {Box, Container, Stack} from "@mui/material";
 import brown from "@mui/material/colors/brown";
 import green from "@mui/material/colors/green";
-export default function Home() {
+import { NextPage } from "next";
+
+const Home: NextPage = () => {
   return (
     <>
    <Stack sx={{ background: "81c784" }}>Header</Stack>
@@ -16,4 +19,6 @@ export default function Home() {
   <Stack sx={{ background: "a1887f" }}>Footer</Stack>
   </>
   );
-}
+}; 
+
+export default withLayoutMain(Home);
